@@ -29,8 +29,10 @@ VisionCaptureControl
 
 ## Features 特性
 * Support batch scan</br>
+* Support `Barcode Only` mode which would ignore QRCode and improve the recognition rate&speed of barcode substantially
 * Auto-focus to raise the recognition rate&speed</br>
 * 支持进行条码/二维码的单体或批量扫描</br>
+* 支持条码专扫，此模式下会忽略二维码，但会大幅提高条码的识别速度</br>
 * 定时自动对焦，提高识别速度和识别率</br>
 
 ## Requirements 要求
