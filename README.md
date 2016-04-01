@@ -1,19 +1,19 @@
 VisionCaptureControl
 =====
 * An oc barcode/QRcode recognizer based on iOS AVCaptureDevice
-* 基于IOS7+自带条码识别器的自适应条码/二维码扫描控件
+* 基于IOS7+自带条码识别器的自适应条码/二维码扫描控件，已自动处理相机访问权限
 
-## Screenshots
+### Screenshots
 ![image](http://blog.viiio.com/wp-content/uploads/2016/04/IMG_0024.jpg)
 ![image](http://blog.viiio.com/wp-content/uploads/2016/04/IMG_0026.jpg)
 
-## Contents
+### Contents
 ## 1. Installation 安装
 
   * Just drag VisionControl folder into your project
   * 将VisionControl文件夹拖入你的項目
 
-    在你需要使用识别器的文件中导入头文件:
+### 在你需要使用识别器的文件中导入头文件:
 ```objective-c
 #import "VisionCaptureControl.h"
 ```
