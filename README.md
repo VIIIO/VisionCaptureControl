@@ -28,10 +28,10 @@ VisionCaptureControl
 ```
 
 ## Features 特性
-   Support batch scan</br>
-   Auto-focus to improve raise the recognition rate&speed</br>
-   支持进行条码/二维码的单体或批量扫描</br>
-   定时自动对焦，提高识别速度和识别率</br>
+* Support batch scan</br>
+* Auto-focus to improve raise the recognition rate&speed</br>
+* 支持进行条码/二维码的单体或批量扫描</br>
+* 定时自动对焦，提高识别速度和识别率</br>
 
 ## Requirements 要求
   iOS 7 or later. Requires ARC  ,support iPhone/iPad
