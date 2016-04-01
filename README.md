@@ -34,13 +34,8 @@ VisionCaptureControl
    
 ## 4. More 更多 
 
-  Please issue me 
-  If you find a bug, please create a issue.  
-  Welcome to pull requests.  
-  More infomation please view code.  
-  如果你发现了bug，请提一个issue。  
-  欢迎给我提pull requests。  
-  更多信息详见代码，也可查看我的博客: [我的博客](http://www.cnblogs.com/tanzhenblog/ "半尺尘 - 博客园")
+  Please create a issue me if you have any questions.
+  Welcome to visit my blog [Blog](http://blog.viiio.com/ "Vision的博客")
   
 ## 5. Licenses
    All source code is licensed under the MIT License.
