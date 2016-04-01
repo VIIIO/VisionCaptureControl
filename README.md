@@ -4,14 +4,13 @@ VisionCaptureControl
 * 基于IOS7+自带条码识别器的自适应条码/二维码扫描控件，已自动处理相机访问权限
 
 ### Screenshots
-![image](http://blog.viiio.com/wp-content/uploads/2016/04/IMG_0024.jpg)
 ![image](http://blog.viiio.com/wp-content/uploads/2016/04/IMG_0026.jpg)
 
 ### Contents
 ## Installation 安装
 
-  * Just drag VisionControl folder into your project
-  * 将VisionControl文件夹拖入你的項目
+  * Just drag `VisionControl` folder into your project
+  * 将`VisionControl`文件夹拖入你的項目
 
 ### 在你需要使用识别器的文件中导入头文件:
 ```objective-c
@@ -27,7 +26,13 @@ VisionCaptureControl
     }];
     [capture show];
 ```
-  
+
+## Features 特性
+   Support batch scan</br>
+   Auto-focus to improve raise the recognition rate&speed</br>
+   支持进行条码/二维码的单体或批量扫描</br>
+   定时自动对焦，提高识别速度和识别率</br>
+
 ## Requirements 要求
   iOS 7 or later. Requires ARC  ,support iPhone/iPad
   
