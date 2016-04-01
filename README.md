@@ -34,9 +34,9 @@ VisionCaptureControl
    
 ## 4. More 更多 
 
-  Please create a issue me if you have any questions.
-  Welcome to visit my blog [Blog](http://blog.viiio.com/ "Vision的博客")
+  Please create a issue if you have any questions.
+  Welcome to visit my [Blog](http://blog.viiio.com/ "Vision的博客")
   
 ## 5. Licenses
-   All source code is licensed under the MIT License.
+   All source code is licensed under the [MIT License](https://github.com/VIIIO/VisionCaptureControl/blob/master/LICENSE "License").
   
