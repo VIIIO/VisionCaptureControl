@@ -8,7 +8,7 @@ VisionCaptureControl
 ![image](http://blog.viiio.com/wp-content/uploads/2016/04/IMG_0026.jpg)
 
 ### Contents
-## 1. Installation 安装
+## Installation 安装
 
   * Just drag VisionControl folder into your project
   * 将VisionControl文件夹拖入你的項目
@@ -17,7 +17,7 @@ VisionCaptureControl
 ```objective-c
 #import "VisionCaptureControl.h"
 ```
-## 2. Usage 使用方法
+## Usage 使用方法
 ```objective-c
    VisionCaptureControl *capture = [[VisionCaptureControl alloc] init];
     [capture setMultiMode:NO];//default value is NO
@@ -28,15 +28,15 @@ VisionCaptureControl
     [capture show];
 ```
   
-## 3. Requirements 要求
-   iOS 7 or later. Requires ARC  
+## Requirements 要求
+   iOS 7 or later. Requires ARC  ,support iPhone/iPad
    iOS 7及以上系统可使用. 本控件纯ARC，支持iPhone/iPad横竖屏
    
-## 4. More 更多 
+## More 更多 
 
   Please create a issue if you have any questions.
   Welcome to visit my [Blog](http://blog.viiio.com/ "Vision的博客")
   
-## 5. Licenses
+## Licenses
    All source code is licensed under the [MIT License](https://github.com/VIIIO/VisionCaptureControl/blob/master/LICENSE "License").
   
