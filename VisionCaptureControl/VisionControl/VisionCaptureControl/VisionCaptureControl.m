@@ -17,6 +17,7 @@
 #define VisionKeyIsLandscape (UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation))
 typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 @interface VisionCaptureControl (){
+    NSTimer *_timer;
     UIImageView *_QrCodeline;
     //设置扫描画面
     UIView *_scanView;
@@ -73,6 +74,13 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     [self requestAccess];
 }
 
+- (void)dealloc{
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
+}
+
 - (void)requestAccess{
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     switch (authStatus) {
@@ -80,18 +88,12 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
         {
             [self setupCamera];
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                if (granted)
-                {
-//                    [self setupCamera];
-                    //扫描线动画
-                    IsStopped = NO;
-                    [self moveUpAndDownLine];
-                }
-                else
-                {
-                    
+                if (_timer && IsStopped) {
+                    [_timer invalidate];
+                    _timer = nil;
                 }
             }];
+            _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(checkAuthorizationStatus:) userInfo:nil repeats:YES];
             break;
         }
         case AVAuthorizationStatusRestricted:
@@ -106,6 +108,22 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
             IsStopped = NO;
             [self moveUpAndDownLine];
         }
+    }
+}
+
+- (void)checkAuthorizationStatus:(NSTimer *)timer{
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    switch (authStatus) {
+        case AVAuthorizationStatusAuthorized:
+            [_timer invalidate];
+            _timer = nil;
+            IsStopped = NO;
+            [self moveUpAndDownLine];
+            break;
+        case AVAuthorizationStatusRestricted:
+        case AVAuthorizationStatusDenied:
+        default:
+            break;
     }
 }
 

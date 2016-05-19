@@ -430,6 +430,7 @@
 				28D3D9DC1CAE4C9D00E8380E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28D3D9DD1CAE4C9D00E8380E /* Build configuration list for PBXNativeTarget "VisionCaptureControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +439,7 @@
 				28D3D9DF1CAE4C9D00E8380E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
